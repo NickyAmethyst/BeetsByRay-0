@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/BeetLogo.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Beets by Ray</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="container nav-bar header">
+            <a class=""><img class="search-logo"src="./images/search.svg.png"></a>
+            <a class=""><img class="beet-logo"src="./images/BeetLogo.png"></a>
+            <button class="nav-btn" onclick="dropdown()" ><img id="nav-btn" class="logo search-logo"src="./images/hamymen.png"></button>
+        </nav>
+        <nav class="nav-drop" id="drop">
+            
+        </nav>
+    
+
+        <section class="dropdown-navbar">
+            <a class="dropdown-menu-item">Discover</a>
+            <a class="dropdown-menu-item">Shop</a>
+            <a class="dropdown-menu-item">Suport</a>
+            <div class="dropdown-menu-item"><a class="other">Other</a><img class="dropdown-menue-plus" src="./images/exit.png"></div>
+        </section>
+    </header>
+
+    <p class="delivery"><a>Fast and free delivery &#x21E8</a></p>
+    <section class="product grid-container">
+        <div class="beets1-info">
+            <h2 class="beets1 beets1-lable">BEETS STUDIO SNACKS</h2>
+            <p class="beets1 beets1-about">Hunger-Canceling Root-tech</p>
+        </div>
+        <div class="price-act">
+            <div class="beets1-act">
+                <p class="beets1 beets1-price">$149.99</p>
+                <div class="beets1 buttons">
+                    <a class="btn beets1 btn-container"><span>BUY ON </span><img class="logo-small" src="./images/BeetLogoWhite.png"></a>
+                    <a class="btn beets1">LEARN MORE</a>
+                </div>
+            </div>
+            <img class="beets1 beets1-pic" src="./images/Beetroot-PNG-Pic-1third.png">
+        </div>
+    </section>
+    <script>
+        n = 1;
+        i = 1;
+        function dropdown() {
+            const imgs = ["./images/hamymen.png", "./images/exit.png"]
+            const disps = ["none", "flex"]
+            document.getElementById("nav-btn").src = imgs[n];
+            document.getElementsByClassName("dropdown-navbar")[0].style.display = disps[n]
+            i += 1;
+            n = i%2;
+        }
+    </script>
+    <section class="main-section ">
+        <h2 class="section-title">Beet Your Brain with <del>Books!</del> Articles!<span class="small"> ...about beets</span></h2>
+        <ul class="articles">
+            <li class="article">
+                <a class="article-link">
+                    <img class="article-image article-image-double" src="images/bath-canning.jpg">
+                    <div class="article-title">
+                        Beeting Your P.R.<br><span class="subtitle">Nitro boost your workout... for real<span class="read"> Read</span>
+                    </div>
+                </a>
+            </li>
+            <li class="article">
+                <a class="article-link">
+                    <img class="article-image" src="images/beets-recipe.jpg">
+                    <div class="article-title">
+                        Dutch Beet Recipe<br><span class="subtitle">Makes you shit reeeeel gud<span class="read"> Read</span>
+                    </div>
+                </a>
+            </li>
+            <li class="article">
+                <a class="article-link">
+                    <img class="article-image" src="images/excurcise.jpeg">
+                    <div class="article-title">
+                        Beeting Your P.R.<br><span class="subtitle">Nitro boost your workout... for real<span class="read"> Read</span>
+                    </div>
+                </a>
+            </li>
+            <li class="article">
+                <a class="article-link">
+                    <img class="article-image" src="images/excurcise.jpeg">
+                    <div class="article-title">
+                        Beeting Your P.R.<br><span class="subtitle">Nitro boost your workout... for real<span class="read"> Read</span>
+                    </div>
+                </a>
+            </li>
+            <li class="article">
+                <a class="article-link">
+                    <img class="article-image" src="images/excurcise.jpeg">
+                    <div class="article-title">
+                        Beeting Your P.R.<br><span class="subtitle">Nitro boost your workout... for real<span class="read"> Read</span>
+                    </div>
+                </a>
+            </li>
+            <li class="article">
+                <a class="article-link">
+                    <img class="article-image" src="images/excurcise.jpeg">
+                    <div class="article-title">
+                        Beeting Your P.R.<br><span class="subtitle">Nitro boost your workout... for real<span class="read"> Read</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
