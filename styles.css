@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 
 body {
     position: relative;
@@ -10,7 +14,7 @@ body {
 ul {
     list-style: none;
 }
-.container {
+.nav-container {
     max-width: 90%;
     margin: 0 auto;
 }
@@ -192,6 +196,10 @@ ul {
     float: inline-end;
 }
 
+
+
+
+
 /* Articles */
 .section-title {
     background:white;
@@ -199,10 +207,11 @@ ul {
     text-align: center;
     padding: 10px;
     margin-top: 20;
+    font-size: 4vw;
 }
 
 .section-title .small {
-    font-size: small;
+    font-size: 2vw;;
 }
 .articles {
     display: flex;
@@ -229,10 +238,13 @@ ul {
     position: absolute;
     bottom: 2px;
     right: 3px;
-    color: white;
-    background: #00000090;
     font-weight: bolder;
     padding: 0;
+}
+
+.article-text {
+    color: #333;
+    background: white;
 }
 .subtitle {
     font-weight: normal;
@@ -249,4 +261,76 @@ li a:hover div span .read {
 
 li a:hover .article-title {
     display: block;
+}
+
+
+/* -------Footer------- */
+.beet-logo {
+    width: 25px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer {
+    color: #777;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #999;
+
+}
+.footer:last-child {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom-style: solid;
+
+}
+
+/* -----Shop ---------*/
+.prod-links {
+    display: flex;
+    justify-content: space-around;
+}
+.prod-btn {
+    background: #eee;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+/*----- Responsive >78-px styles------- */
+@media screen and (min-width: 780px) {
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .beets1-pic {
+        width: 200px;
+    }
+    .beets1-lable {
+        font-size: 45px;
+    }
+    .beets1-about {
+        font-size: 30px;
+    }
+    .beets1-price {
+        font-size: 30px;
+    }
+    .beets1-act .btn {
+        font-size: 15px;
+    }
+
+    /* articles-------  */
+    .section-title {
+        font-size: 30px;
+    }
 }
